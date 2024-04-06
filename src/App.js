@@ -1,23 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
 
+function Header() {
+  return (
+      <>
+        <h1>header</h1>
+          <p>Lorem ipsum dolor.</p>
+          <Title/>
+      </>
+  )
+}
+
+function Content() {
+    return (
+        <>
+            <h2>Content</h2>
+            <p>Content Lorem ipsum dolor.</p>
+            <Title/>
+        </>
+    )
+}
+function Footer() {
+  return (
+      <>
+          <h2>Footer</h2>
+        <p>Footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eum.</p>
+          <Title/>
+
+      </>
+  )
+}
+function Title() {
+    return (
+        <>
+            <h1>Title</h1>
+        </>
+    )
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <Content />
+        <Footer/>
     </div>
   );
 }
